@@ -19,6 +19,8 @@ while True:
         y1 = int(d.Top)
         x2 = int(d.Right)
         y2 = int(d.Bottom)
+        className = net.GetClassDesc(d.ClassID)
+        cv2.rectangle(img,(x1,y1),(x2,y2),(255,0,255),2)
 
     #img = jetson.utils.cudaToNumpy(imgCuda)
 
